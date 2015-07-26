@@ -1,7 +1,1 @@
-*{
-font-family: 'Open Sans', sans-serif;
-}
-
-nav{
- font-size: 16px;
-}
+.contenedor{font-family:'Asap',sans-serif;margin:0 auto;width:100%;max-width:960px;padding:15px}header{width:100%;height:auto;max-width:960px;float:left;margin-bottom:10px}header .email{float:left;width:100%;max-width:100px}header .logo{float:right}header .logo>img{width:100%;max-width:500px}section img{width:100%;max-width:960px}section h3{font-size:36px;color:#424251;letter-spacing:4px}section p{font-size:12.5px;line-height:17px;color:#228c9a;letter-spacing:.4px}footer{width:100%;max-width:960px;background-color:#fff;text-align:center;float:left;margin-top:20px;}footer p{margin:1% 20%;background-color:#eee;padding:10px;color:#dc4803}
