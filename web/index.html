@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>cesar's photography</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Lato|Asap' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/style.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato|Asap' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/fonts.css">
 </head>
 <body>
 	<div class="contenedor">
@@ -17,30 +17,92 @@
 			<span class='glyphicon glyphicon-envelope' aria-hidden='true'></span> E-MAIL</button>
 		</div>
 		<div class="logo">
-			<img src="img/logo.jpg" alt="">
+			<a href="#">
+				<img src="img/logo.jpg" alt="">	
+			</a>
 		</div>	
 
 		</header>
-<!--		<nav>
+		<nav>
 			<ul>
 				<li><a href="#">INICIO</a></li>
 				<li><a href="#">QUIEN SOY</a></li>
 				<li><a href="#">GALERIA</a></li>
 				<li><a href="#">BLOG</a></li>
 			</ul>
-		</nav>-->
-		<section>
-			<img src="img/01.jpg" alt="">
-			<h3>Lorem ipsum dolor</h3>
-			<p>Consectetur adipisicing elit. Odio quos quisquam, accusamus architecto iste asperiores doloribus voluptas, consectetur ipsam sint libero facere in aliquid repudiandae eaque, illo dicta dolorem temporibus.</p>
+		</nav>
+		<section class='main'>
+			<div class="slides">
+					<div>
+						<h3>Lorem ipsum dolor 01</h3>
+						<p>Consectetur adipisicing elit. Odio quos quisquam, accusamus architecto iste asperiores doloribus voluptas, consectetur ipsam sint libero facere in aliquid repudiandae eaque, illo dicta dolorem temporibus.</p>			<img src="js/img/01.jpg" alt="">			
+					</div>
+
+					<div>
+						<h3>Lorem ipsum dolor 02</h3>
+						<p>Consectetur adipisicing elit. Odio quos quisquam, accusamus architecto iste asperiores doloribus voluptas, consectetur ipsam sint libero facere in aliquid repudiandae eaque, illo dicta dolorem temporibus.</p>			<img src="js/img/02.jpg" alt="">			
+					</div>
+
+					<div>
+						<h3>Lorem ipsum dolor 03</h3>
+						<p>Consectetur adipisicing elit. Odio quos quisquam, accusamus architecto iste asperiores doloribus voluptas, consectetur ipsam sint libero facere in aliquid repudiandae eaque, illo dicta dolorem temporibus.</p>			<img src="js/img/03.jpg" alt="">			
+					</div>																				
+
+					<div>
+						<h3>Lorem ipsum dolor 04</h3>
+						<p>Consectetur adipisicing elit. Odio quos quisquam, accusamus architecto iste asperiores doloribus voluptas, consectetur ipsam sint libero facere in aliquid repudiandae eaque, illo dicta dolorem temporibus.</p>			<img src="js/img/04.jpg" alt="">			
+					</div>		
+		
+			</div>
 
 		</section>
 
 		<footer>
 			<p>copyright derechos reservados cesar's photography 2015</p>		
 		</footer>
-	
 		
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.slides.js"></script>
+		<script>
+		    $(function(){
+				$(".slides").slidesjs({
+					width:960,
+					height:640,
+					start:1,
+					navigation:{
+						active:true,
+						effect:'slide'
+					},
+					effect:{
+						slide:{
+							speed:1000
+						},
+						fade:{
+							speed: 300,
+							crossfade:true
+						}
+					},
+					play: {
+						active: true,
+							// [boolean] Generate the play and stop buttons.
+							// You cannot use your own buttons. Sorry.
+     					  effect: "fade",
+						// [string] Can be either "slide" or "fade".
+						  interval: 2500,
+							// [number] Time spent on each slide in milliseconds.
+						  auto: true,
+							// [boolean] Start playing the slideshow on load.
+						  swap: true,
+							// [boolean] show/hide stop and play buttons
+						  pauseOnHover: false,
+							// [boolean] pause a playing slideshow on hover
+						  restartDelay: 2500
+							// [number] restart delay on inactive slideshow
+					}
+
+				});
+			});
+		</script>
 	</div>
 </body>
 </html>
