@@ -95,23 +95,7 @@ footer
 		color cfparr
 
 
-/*ZONA NO REPETITIVA*/		
-		
-/*SECTION*/
 
-section
-	img
-		width 100%
-		max-width 960px
-	h3
-		font-size tit
-		color ctit
-		letter-spacing stit
-	p
-		font-size tparr
-		line-height aparr
-		color cparr
-		letter-spacing sparr
 		
 		
 /*CAROUSEL*/			
@@ -143,6 +127,8 @@ section .slides
 			
 
 .slides
+	z-index 1
+	position relative
 	.active
 		background #E26302 /*#FC940A*/
 		opacity 0.6
@@ -160,7 +146,41 @@ section .slides
 	
 	
 	 
+/*ZONA NO REPETITIVA*/		
+		
+/*SECTION*/
+/*
+section
+	img
+		width 100%
+		max-width 960px
+	h3
+		font-size tit
+		color ctit
+		letter-spacing stit
+	p
+		font-size tparr
+		line-height aparr
+		color cparr
+		letter-spacing sparr*/
 
-
-
+.slides
+	
+	h3
+		position absolute
+		padding 10px
+		background-color black
+		z-index 3
+		color red
+		margin 400px 0px 10px 600px
+		text-transform uppercase
+	p
+		position absolute
+		padding 10px
+		background-color white
+		display block
+		width 50%
+		z-index 3
+		margin 450px 0px 10px 420px
+		
 
